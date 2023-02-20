@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>login in</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-
+		awesome/4.7.0/css/font-awesome.min.css">
+		<style	>
+			
+		</style>
+    </head>
+    <body>
+		<div class="container">
+		<!-------main header---------->
+			<div class="header">
+				<div class="navbar">
+					<div class="logo">
+						<img src="images/i-shop-logo.png" width="125">
+					</div>
+					<div id = "searchBar" class="search">
+						<input class = "srch" type="search" name="" placeholder= "search products">
+						<a href=""><button class="btn">search</button></a>
+					</div>
+					<img src="images/search-icon.png" width= "80" class = "search-icon" onclick = "searchtoggle()">
+					<nav>
+						<ul id = "MenuItems">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="all_product.html">All Products</a></li>
+							<li><a href="">About</a></li>
+							<li><a href="">Contact</a></li>
+							<li><a href="account.html">Account</a></li>
+						</ul>	
+					</nav>
+					<img src="images/menu-icon.png" width= "80" class = "menu-icon" onclick = "menutoggle()">
+				</div>
+			</div>
+			<hr style = "background-color: black;">
+			
+			<!-------main body---------->
+			<div class= "main">
+				<div id = "row">
+				<!img src="images/Annotation 2022-03-18 122401.png">
+					<div class = "col-2">						
+						<h1>Make your life easier</br>with I-shop!</h1>
+						<p>It's not about working hard but working smart.
+						A good name is better than gold</p>
+						<a href= "" class="btn2">Explore Now &#8594;</a>
+					</div>
+					<div class = "form">
+						<h2>Login Here</h2>
+						<input type="email" name = "email" placeholder= "email">
+						<input type="password" name= "" placeholder="password">
+						<button class = "btn1"><a href = "">Login</a></button>
+						
+						<p class = "link">Don't have an account</p><br>
+						<a href = "">sign up</a>
+					</div>
+				</div>
+				<!-------login bar---------->
+		
+		<!------------js for toggle menu-------------->
+		<script>
+			var MenuItems = document.getElementById("MenuItems"), searchBar = document.getElementById("searchBar");
+			MenuItems.style.maxHeight = "0px";
+			searchBar.style.maxHeight = "0px";
+			
+			function menutoggle(){
+				if(MenuItems.style.maxHeight == "0px"){
+					MenuItems.style.maxHeight = "200px"
+				}
+				else{
+					MenuItems.style.maxHeight = "0px"
+				}
+			}
+			 function searchtoggle(){
+				if(searchBar.style.maxHeight == "0px"){
+					searchBar.style.maxHeight = "200px"
+				}
+				else{
+					searchBar.style.maxHeight = "0px"
+				}
+			}
+		</script>
+    </body>
+</html>
